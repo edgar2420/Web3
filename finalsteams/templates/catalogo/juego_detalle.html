@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalles de {{ juego.nombre }}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="mb-4">{{ juego.nombre }}</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Card for game details -->
+            <div class="card mb-4">
+                <img src="{{ juego.imagen.url }}" class="card-img-top" alt="Imagen de {{ juego.nombre }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ juego.nombre }}</h5>
+                    <p class="card-text"><strong>Descripción:</strong> {{ juego.descripcion }}</p>
+                    <p class="card-text"><strong>Precio:</strong> ${{ juego.precio }}</p>
+                    <p class="card-text"><strong>Categoría:</strong> {{ juego.categoria.nombre }}</p>
+                </div>
+            </div>
+            <!-- Additional card for screenshots -->
+            {% if juego.capturas.all %}
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Capturas de pantalla:</h5>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            {% for captura in juego.capturas.all %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                <img src="{{ captura.imagen.url }}" class="d-block w-100" alt="Captura de {{ juego.nombre }}">
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <!-- Purchase button -->
+            <div class="d-flex justify-content-center w-100">
+                <a href="#" class="btn btn-success btn-lg">Comprar ahora</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

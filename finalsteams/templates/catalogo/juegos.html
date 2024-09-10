@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}Listado de Juegos{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4 text-center">Listado de Juegos</h1>
+    <!-- Lista de juegos en formato tarjeta -->
+    <div class="row">
+        {% for juego in juegos %}
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <!-- Imagen del juego si está disponible -->
+                {% if juego.imagen %}
+                <img src="{{ juego.imagen.url }}" class="card-img-top" alt="{{ juego.nombre }}" style="height: 200px; object-fit: cover;">
+                {% else %}
+                <img src="https://via.placeholder.com/300x200?text=Sin+Imagen" class="card-img-top" alt="Sin imagen" style="height: 200px; object-fit: cover;">
+                {% endif %}
+
+                <div class="card-body">
+                    <!-- Nombre del juego -->
+                    <h5 class="card-title">{{ juego.nombre }}</h5>
+                    <!-- Precio del juego -->
+                    <p class="card-text"><strong>Precio:</strong> ${{ juego.precio }}</p>
+
+                    <!-- Botones para ver detalles, editar y eliminar -->
+                    <div class="d-flex justify-content-between">
+                        <a href="{% url 'catalogo:detalle_juego' juego.id %}" class="btn btn-info">
+                            <i class="fas fa-eye"></i> Ver detalles
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <div class="alert alert-warning text-center">
+                No hay juegos disponibles.
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

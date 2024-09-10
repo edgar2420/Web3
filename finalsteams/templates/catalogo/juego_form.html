@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">{{ form.instance.pk|yesno:"Editar Juego,Crear Nuevo Juego" }}</h1>
+
+    <form method="POST" enctype="multipart/form-data" class="p-4 bg-light rounded shadow-sm">
+        {% csrf_token %}
+
+        <!-- Nombre del Juego -->
+        <div class="form-group mb-3">
+            <label for="nombre" class="form-label"><i class="fas fa-gamepad"></i> Nombre del Juego</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introduce el nombre del juego" value="{{ form.nombre.value }}">
+        </div>
+
+        <!-- Descripción del Juego -->
+        <div class="form-group mb-3">
+            <label for="descripcion" class="form-label"><i class="fas fa-align-left"></i> Descripción</label>
+            <textarea class="form-control" name="descripcion" id="descripcion" placeholder="Escribe una descripción del juego">{{ form.descripcion.value }}</textarea>
+        </div>
+
+        <!-- Precio del Juego -->
+        <div class="form-group mb-3">
+            <label for="precio" class="form-label"><i class="fas fa-dollar-sign"></i> Precio</label>
+            <input type="number" step="0.01" class="form-control" name="precio" id="precio" placeholder="Introduce el precio del juego" value="{{ form.precio.value }}">
+        </div>
+
+        <!-- Categoría del Juego -->
+        <div class="form-group mb-3">
+            <label for="categoria" class="form-label"><i class="fas fa-list"></i> Categoría</label>
+            {{ form.categoria }}  <!-- Este es el campo select para seleccionar una categoría -->
+        </div>
+
+        <!-- Imagen del Juego -->
+        <div class="form-group mb-4">
+            <label for="imagen" class="form-label"><i class="fas fa-image"></i> Imagen del Juego</label>
+            <input type="file" class="form-control-file" name="imagen" id="imagen">
+            {% if form.instance.imagen %}
+            <small class="form-text text-muted">
+                Imagen actual: <a href="{{ form.instance.imagen.url }}" target="_blank">Ver imagen</a>
+            </small>
+            {% endif %}
+        </div>
+
+        <!-- Botón de guardar -->
+        <div class="d-grid gap-2">
+            <button type="submit" class="btn btn-success btn-lg">
+                <i class="fas fa-save"></i> {{ form.instance.pk|yesno:"Actualizar,Crear" }}
+            </button>
+        </div>
+    </form>
+
+    <!-- Lista de Juegos -->
+    <h2 class="mt-5">Lista de Juegos</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th>Imagen</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for juego in juegos %}
+                <tr>
+                    <td>{{ juego.nombre }}</td>
+                    <td>{{ juego.descripcion }}</td>
+                    <td>${{ juego.precio }}</td>
+                    <td>{{ juego.categoria.nombre }}</td>
+                    <td>
+                        {% if juego.imagen %}
+                        <a href="{{ juego.imagen.url }}" target="_blank">Ver Imagen</a>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <a href="{% url 'editar_juego' juego.id %}" class="btn btn-warning btn-sm">
+                            <i class="fas fa-edit"></i> Editar
+                        </a>
+                        <form method="POST" action="{% url 'eliminar_juego' juego.id %}" style="display:inline;">
+                            {% csrf_token %}
+                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Estás seguro de que quieres eliminar este juego?');">
+                                <i class="fas fa-trash"></i> Eliminar
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="6" class="text-center">No hay juegos disponibles.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

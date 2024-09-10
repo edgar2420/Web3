@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}Listado de Usuarios{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4 text-center">Listado de Usuarios</h1>
+
+    <!-- Botón para crear un nuevo usuario -->
+    <div class="text-right mb-3">
+        <a href="{% url 'catalogo:crear_usuario' %}" class="btn btn-success">
+            <i class="fas fa-user-plus"></i> Crear Nuevo Usuario
+        </a>
+    </div>
+
+    <!-- Lista de usuarios en formato tarjeta -->
+    <div class="row">
+        {% for usuario in usuarios %}
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <!-- Nombre del usuario -->
+                    <h5 class="card-title">{{ usuario.nombre }}</h5>
+                    <p class="card-text"><strong>Email:</strong> {{ usuario.email }}</p>
+
+                    <!-- Botones para editar y eliminar -->
+                    <div class="d-flex justify-content-between">
+                        <a href="{% url 'catalogo:editar_usuario' usuario.id %}" class="btn btn-primary">
+                            <i class="fas fa-edit"></i> Editar
+                        </a>
+                        <a href="{% url 'catalogo:eliminar_usuario' usuario.id %}" class="btn btn-danger">
+                            <i class="fas fa-trash-alt"></i> Eliminar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <div class="alert alert-warning text-center">
+                No hay usuarios disponibles.
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+

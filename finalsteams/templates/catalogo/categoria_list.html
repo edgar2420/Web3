@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Categorías{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Lista de Categorías</h1>
+    
+    <!-- Botón para crear una nueva categoría -->
+    <a href="{% url 'catalogo:crear_categoria' %}" class="btn btn-success mb-4">Crear Nueva Categoría</a>
+    
+    <!-- Lista de categorías -->
+    <div class="list-group">
+        {% for categoria in categorias %}
+        <div class="list-group-item d-flex justify-content-between align-items-center">
+            {{ categoria.nombre }}
+            <div>
+                <a href="{% url 'catalogo:editar_categoria' categoria.id %}" class="btn btn-primary btn-sm">Editar</a>
+                <a href="{% url 'catalogo:eliminar_categoria' categoria.id %}" class="btn btn-danger btn-sm">Eliminar</a>
+            </div>
+        </div>
+        {% empty %}
+        <div class="alert alert-info text-center">
+            No hay categorías disponibles.
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

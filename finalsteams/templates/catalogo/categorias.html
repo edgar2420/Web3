@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}Categorías{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Categorías</h1>
+    
+    <!-- Sección de Categorías -->
+    <div class="row">
+        {% for categoria in categorias %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ categoria.nombre }}</h5>
+                    <a href="{% url 'catalogo:listar_juegos_por_categoria' categoria.id %}" class="btn btn-primary">Ver Juegos</a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <div class="alert alert-info text-center">
+                No hay categorías disponibles.
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <!-- Sección de Top 20 Juegos Más Comprados -->
+    <h2 class="text-center mt-5 mb-4">Top 20 Juegos Más Comprados</h2>
+    <div class="row">
+        {% for juego in top_juegos %}
+        <div class="col-md-6 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ juego.nombre }}</h5>
+                    <p class="card-text">Compras: {{ juego.num_compras }}</p>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <div class="alert alert-info text-center">
+                No hay juegos disponibles en el top 20.
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

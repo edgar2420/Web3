@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Lista de Juegos</h1>
+<a href="{% url 'catalogo:crear_juego' %}" class="btn btn-success">Crear Nuevo Juego</a>
+<ul class="list-group mt-3">
+    {% for juego in juegos %}
+    <li class="list-group-item">
+        {{ juego.nombre }}
+        <a href="{% url 'catalogo:editar_juego' juego.id %}" class="btn btn-primary btn-sm ml-3">Editar</a>
+        <a href="{% url 'catalogo:eliminar_juego' juego.id %}" class="btn btn-danger btn-sm ml-3">Eliminar</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

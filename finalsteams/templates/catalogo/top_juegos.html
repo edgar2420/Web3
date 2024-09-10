@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Top 20 Juegos Más Comprados{% endblock %}
+
+{% block content %}
+<h1>Top 20 Juegos Más Comprados</h1>
+<ul class="list-group">
+    {% for juego in top_juegos %}
+    <li class="list-group-item">
+        <strong>{{ juego.nombre }}</strong> - {{ juego.num_compras }} compras
+        <a href="{% url 'catalogo:detalle_juego' juego.id %}" class="btn btn-primary btn-sm ml-3">Ver Detalles</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

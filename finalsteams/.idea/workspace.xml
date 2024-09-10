@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="26f6218b-2516-4f65-b34b-be6368d7a601" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/practico1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/forms/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/forms/capturadepantalla.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/forms/categoria.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/forms/compra.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/forms/form_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/forms/juego.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/forms/login_form.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/forms/usuario.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/models/capturadepantalla.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/models/categoria.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/models/compra.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/models/juego.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/models/usuario.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/views/categoria.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/views/compra.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/views/juego.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catalogo/views/usuario.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practico1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practico1/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practico1/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practico1/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practico1/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/categoria_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/categoria_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/categoria_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/categorias.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/compra.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/juego_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/juego_detalle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/juego_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/juego_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/juegos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/top_juegos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/usuario_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/usuario_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/catalogo/usuarios.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2lXths57NnPNFJW6Edx5WcvZDtO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/USUARIO/Downloads/web-III-2024-2-main/web-III-2024-2-main/practicadjango2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USUARIO\web3\practico1\catalogo\forms" />
+      <recent name="C:\Users\USUARIO\web3\practico1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USUARIO\web3\practico1" />
+      <recent name="C:\Users\USUARIO\web3\practico1\catalogo" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="practico1" type="Python.DjangoServer" factoryName="Django server">
+      <module name="practico1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-PY-242.21829.153" />
+        <option value="bundled-python-sdk-464836ebc622-b74155a9e76b-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.21829.153" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26f6218b-2516-4f65-b34b-be6368d7a601" name="Changes" comment="" />
+      <created>1725338370397</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725338370397</updated>
+      <workItem from="1725338374033" duration="135000" />
+      <workItem from="1725689858815" duration="1131000" />
+      <workItem from="1725823183691" duration="3050000" />
+      <workItem from="1725826771818" duration="3213000" />
+      <workItem from="1725831205804" duration="1324000" />
+      <workItem from="1725832557734" duration="7035000" />
+      <workItem from="1725960913232" duration="20021000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
