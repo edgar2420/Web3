@@ -22,6 +22,7 @@
       <change afterPath="$PROJECT_DIR$/trello/admin.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/trello/api/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/trello/api/lista_view.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trello/api/register_view.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/trello/api/serializers.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/trello/api/tablero_view.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/trello/api/tarea_view.py" afterDir="false" />
@@ -58,22 +59,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "E:/web-III-2024-2-main/web-III-2024-2-main/practicaapi",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/web-III-2024-2-main/web-III-2024-2-main/practicaapi&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="practico2trello" type="Python.DjangoServer" factoryName="Django server">
       <module name="practico2trello" />
@@ -119,7 +120,7 @@
       <workItem from="1727101311996" duration="3238000" />
       <workItem from="1727195751110" duration="1110000" />
       <workItem from="1727204677256" duration="3711000" />
-      <workItem from="1727208431663" duration="912000" />
+      <workItem from="1727208431663" duration="16987000" />
     </task>
     <servers />
   </component>
