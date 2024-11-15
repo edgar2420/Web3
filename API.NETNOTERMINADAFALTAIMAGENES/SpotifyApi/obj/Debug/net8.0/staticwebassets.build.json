@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "9emRrDzyqfu7gRHCp/1pYdniW4XDTkGBWWt33+sJA6o=",
+  "Source": "SpotifyApi",
+  "BasePath": "_content/SpotifyApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "SpotifyApi\\wwwroot",
+      "Source": "SpotifyApi",
+      "ContentRoot": "C:\\Users\\USUARIO\\source\\repos\\SpotifyApi\\SpotifyApi\\wwwroot\\",
+      "BasePath": "_content/SpotifyApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
